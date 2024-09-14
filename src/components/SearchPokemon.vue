@@ -82,14 +82,109 @@ export default {
 };
 </script>
 
-<style>
-.clickable {
-  cursor: pointer;
-  color: blue;
-  text-decoration: underline;
+<style scoped>
+/* Layout base */
+#app {
+  background-color: #f2f2f2; /* Colore chiaro di sfondo */
+  border: 2px solid #3b4cca; /* Bordo blu in stile Pokedex */
+  border-radius: 15px;
+  padding: 20px;
+  width: 350px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Titoli e Testi */
+h1 {
+  color: #ffcb05; /* Giallo in stile Pokémon */
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+h2 {
+  color: #3b4cca; /* Colore blu in stile Pokedex */
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #ff0000; /* Rosso in stile Pokedex */
+}
+
+/* Input e Pulsanti */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #ffcb05;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #ff0000; /* Colore rosso pulsante */
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #cc0000; /* Cambia colore al passaggio del mouse */
+}
+
+/* Stile della lista dei Pokémon */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #ffcb05;
+  color: #000;
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li span {
+  cursor: pointer;
+}
+
+li button {
+  background-color: #cc0000;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #ff0000;
+}
+
+/* Stile dei dettagli del Pokémon */
 .pokemon-details {
   margin-top: 20px;
+  background-color: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.pokemon-details img {
+  width: 150px;
+}
+
+.pokemon-details p {
+  margin: 5px 0;
 }
 </style>
